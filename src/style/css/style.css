@@ -1,0 +1,130 @@
+button {
+    transition: all 0.4s ease-out;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 4px 30px 16px 0px rgba(50, 50, 50, 0.45);
+}
+
+.predio{
+    background: url(../../assets/img/predio.jpg) no-repeat center top fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+width: 100%;
+height: 100%;
+}
+.linePink {
+    background-color: #FF1493;
+    height: 10px;
+    margin-top: -35px;
+}
+
+.lineGreen {
+    background-color: #90EE90;
+    ;
+    height: 10px;
+    margin-top: -35px;
+}
+
+.lineOrange {
+    background-color: #FF8C00;
+    height: 10px;
+    margin-top: -35px;
+}
+
+.titleOrange {
+    color: #FF8C00;
+    font-family: 'Lilita One', cursive;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+}
+
+#container img {
+    float: left
+}
+
+.card-signin {
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-signin .card-title {
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.card-signin .card-body {
+    padding: 2rem;
+}
+
+.form-signin {
+    width: 100%;
+}
+
+.form-signin .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    transition: all 0.2s;
+}
+
+.form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form-label-group input {
+    height: auto;
+    border-radius: 2rem;
+}
+
+#cardBody {
+    border-color: aquamarine;
+    border-style: solid;
+    background-color: white;
+    border-radius: 0.5em;
+    border-width: 0.1em;
+}
+
+#info-block section {
+    border: 5px solid black;
+    width: 400px;
+    border-radius: 0.8em;
+}
+
+.file-marker>div {
+    padding: 0, 3px;
+    margin-top: -0.8em;
+}
+
+.box-title {
+    background: white none repeat scroll 0 0;
+    display: inline-block;
+    padding: 0 2px;
+}
+
+.font {
+    font-family: 'Lilita One', cursive;
+}
+
+.normal {
+    font-family: 'Roboto', sans-serif;
+}
