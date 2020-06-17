@@ -19,7 +19,7 @@ width: 100%;
 height: 100%;
 }
 .linePink {
-    background-color: #FF1493;
+    background-color: rgba(121, 79, 13, 0.883);
     height: 10px;
     margin-top: -35px;
 }
