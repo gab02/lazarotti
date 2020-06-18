@@ -128,3 +128,56 @@ height: 100%;
 .normal {
     font-family: 'Roboto', sans-serif;
 }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "open sans";
+    font-weight: 200;
+  }
+  
+  .card1 {
+    box-shadow: 0 0 100px -50px black;
+    width: 250px;
+    height: 250px;
+    background: rgba(51, 110, 123, 0.6);
+    border-radius: 125px;
+    margin: 10px auto;
+    transition: all 0.6s;
+    overflow: hidden;
+  }
+  .card1:hover {
+    background: rgba(51, 110, 123, 0.8);
+    border-radius: 5px;
+    height: 400px;
+  }
+  .card1:hover > p, .card:hover h1 {
+    opacity: 1;
+  }
+  .card1 > p, .card h1 {
+    text-align: center;
+    transition: all 0.6s;
+    opacity: 0;
+    color: white;
+    text-overflow: elipsis;
+  }
+  .card1 > h1 {
+    margin-top: -20px;
+  }
+  .card1 > p {
+    padding: 0px 10px;
+    text-align: justify;
+  }
+  .card1 > .photo {
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    background: url("http://img15.hostingpics.net/pics/835017man.jpg");
+    background-size: 200px;
+    background-position: center;
+    border: 10px solid white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(0, 0, 0, 0.2) inset;
+    margin: 15px;
+    border-radius: 250px;
+  }
+  
