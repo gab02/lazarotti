@@ -801,7 +801,7 @@ ul.social-buttons li a:active {
     display: inline-block;
     width: 170px;
     height: 170px;
-    background: url("http://img15.hostingpics.net/pics/835017man.jpg");
+    background: url("");
     background-size: 200px;
     background-position: left;
     border: 10px solid white;
@@ -897,7 +897,89 @@ img::selection {
 img::-moz-selection {
     background: 0 0;
 }
+.loader-page {
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all .5s ease-out;
+  }
+  .loader-container {
+    /* border: 1px solid steelblue; */
+  
+  }
+  .loader {
+    width: 500px;
+    height: 5px;
+    background-color: rgba(0,0,0,0.3);
+    position: relative;
+  }
+  .loader-fill {
+  
+  }
+  .loader-counter {
+    position: absolute;
+    font-size: 5rem;
+    font-family: 'Lato' ;
+    font-weight: 300;
+    letter-spacing: -5px;
+    color: steelblue;
+    z-index: 9;
+  }.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
 
-body {
-    webkit-tap-highlight-color: #1ee2e7;
-}
+
+/*card*/
+
+.pi {
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    display: inline-block;
+    border: 4px double rgba(255, 255, 255, 0.25);
+    border-width: 4px 0;
+    padding: 1.5em 0em;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    width: 40em;
+    margin: 0 0 0 -20em;
+  }
+  .pi span {
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+    /* Clip Background Image */
+    background: url('../../assets/img/load.png') repeat-;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Animate Background Image */
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+    /* Activate hardware acceleration for smoother animations */
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+  }
+  
+  /* Animate Background Image */
+  @-webkit-keyframes aitf {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
