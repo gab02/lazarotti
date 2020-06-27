@@ -3,7 +3,6 @@
     " crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <script src="./src/style/js/app.js" crossorigin="anonymous"></script>
 
 
 
@@ -26,7 +25,7 @@
       let counter = document.querySelector('.loader-counter');
       let fill = document.querySelector('.loader-fill');
       let amount = 10;
-      let interval = setInterval(loop, 50);
+      let interval = setInterval(loop, 25);
       function loop() {
         if (amount >= 100) {
           clearInterval(interval);
@@ -108,25 +107,28 @@
             <div class="intro-text " style="margin-top: -10%;">
                 
                 <div class="intro-heading" style="margin-left: 40%;">
-                    <div  class="animated flipInX" style=" animation-duration: 15s; background-image: linear-gradient(to bottom, rgba(47, 46, 51, 0.712), rgba(56, 53, 53, 0.39)); width: 250px; height: 250px; margin-top: -100px;" >
+                    <div  class="animated flipInX" style=" animation-duration: 5s; background-image: linear-gradient(to bottom, rgba(47, 46, 51, 0.712), rgba(56, 53, 53, 0.39)); width: 250px; height: 250px; margin-top: -100px;" >
                         
                         
                             <img style="width: 250px; height: 250px;" src="./src/assets/img/lazarotti.png">
                         </div>
                 </div>
                <br><br><br>
-                    <div class="intro-lead-in" style="margin-top: -5%;">Seja Bem-vindo !</div>
-
-                <a href="#services" style="background: rgb(244,226,156);
-                background: -moz-linear-gradient(-45deg, rgba(244,226,156,0) 0%, rgba(59,41,58,1) 100%), -moz-linear-gradient(left, rgba(244,226,156,1) 0%, rgba(130,96,87,1) 100%);
-                background: -webkit-linear-gradient(-45deg, rgba(244,226,156,0) 0%,rgba(59,41,58,1) 100%), -webkit-linear-gradient(left, rgba(244,226,156,1) 0%,rgba(130,96,87,1) 100%);
-                background: -o-linear-gradient(-45deg, rgba(244,226,156,0) 0%,rgba(59,41,58,1) 100%), -o-linear-gradient(left, rgba(244,226,156,1) 0%,rgba(130,96,87,1) 100%);
-                background: -ms-linear-gradient(-45deg, rgba(244,226,156,0) 0%,rgba(59,41,58,1) 100%), -ms-linear-gradient(left, rgba(244,226,156,1) 0%,rgba(130,96,87,1) 100%);
-                background: linear-gradient(135deg, rgba(244,226,156,0) 0%,rgba(59,41,58,1) 100%), linear-gradient(to right, rgba(244,226,156,1) 0%,rgba(130,96,87,1) 100%);" class="page-scroll btn btn-xl">Vamos conhecer um pouco mais sobre a empresa?</a>
+                
+               <div class="intro-lead-in" style="margin-top: -5%;">Seja Bem-vindo !</div>
+               <div  class="spin">
+                <a href="#services" class="btn btn-1" style="width: auto;">
+                    <svg>
+                      <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                    </svg>
+                  <h6 style="color: blanchedalmond;"> VAMOS CONHECER?</h6>
+                  </a>
+         </div>
             </div>
+        
         </div>
     </header>
-
+    <div style="margin-left: 5%; margin-top: -5%;" class="gradient-border" id="box">Animated <br>CSS<br>Gradient Border</div>
     <!-- Services Section -->
     <section id="services">
         <div class="container">
@@ -164,67 +166,8 @@
             </div>
         </div>
     </section>
-    <style>
-    
-    </style>
-    <div class="wrapper">
+
   
-        <input id="flip" type="checkbox" name="flip-card"/>
-        <label for="flip">
-          <div class="cardi">
-            <div class="front">
-              <div class="front_bg">
-              RB
-              </div>
-              <div class="strip"></div>
-              <div class="right_side"></div>
-              <div class="left_side"></div>
-              <div class="name">
-                <span>ROMULO</span>BANARES
-              </div>
-              <div class="profession">
-                Front End Web Developer
-              </div>
-            </div>
-            <div class="backi">
-              <div class="left_back">
-              </div>
-              <div class="item">
-                <a               href="https://tutsplus.com/RomuloBan"
-       target="_blank">
-                  <i class="fa fa-bookmark"></i>Tuts+
-       </a>
-              </div>
-               <div class="item">
-                <a               href="https://twitter.com/RomuloBan"
-       target="_blank">
-                  <i class="fa fa-twitter"></i>Twitter
-       </a>
-              </div>
-               <div class="item">
-                <a               href="https://codepen.io/romuloban69"
-       target="_blank">
-                  <i class="fa fa-codepen"></i>Codepen
-       </a>
-              </div>
-         
-               <div class="item">
-                <a               href="https://github.com/RomuloBan"
-       target="_blank">
-                  <i class="fa fa-github"></i>Github
-       </a>
-              </div>
-                    <div class="item">
-                <a               href="https://www.behance.net/RomuloBan"
-       target="_blank">
-                  <i class="fa fa-behance"></i>Behance
-       </a>
-              </div>
-            </div>
-          </div>
-        </label>
-        
-      </div>
     <!-- Portfolio Grid Section -->
     <section id="portfolio" class="bg-light-gray">
         <div class="container">
@@ -322,7 +265,7 @@
             </div>
         </div>
     </section>
-
+ fVA
     <!-- About Section -->
     <section id="about">
         <div class="container">
@@ -336,7 +279,7 @@
                 <div class="col-lg-12">
                     <ul class="timeline">
                         <li>
-                            <div class="card1">
+                            <div class="card1" style="margin-left: 51%;">
                                 <div class="photo" >
                                     <p style="margin-top: 25%; text-align: center; font-family: 'Oswald', sans-serif; color: white; font-size: 20px;" > COMO <BR>FUNCIONAMOS?
                                         </p>
@@ -355,7 +298,7 @@
                        </div>
                         </li>
                         <li class="timeline-inverted">
-                            <div class="card1">
+                            <div class="card1"style="margin-right: 51%;">
                                 <div class="photo" >
                                     <p style="margin-top: 25%; text-align: center; font-family: 'Oswald', sans-serif; color: white; font-size: 20px;" > COMO <BR>FUNCIONAMOS?
                                         </p>
@@ -374,7 +317,7 @@
                        </div>
                         </li>
                         <li>
-                            <div class="card1">
+                            <div class="card1" style="margin-left: 51%;">
                                 <div class="photo" >
                                     <p style="margin-top: 25%; text-align: center; font-family: 'Oswald', sans-serif; color: white; font-size: 20px;" > COMO <BR>FUNCIONAMOS?
                                         </p>
@@ -393,7 +336,7 @@
                        </div>
                         </li>
                         <li class="timeline-inverted">
-                            <div class="card1">
+                            <div class="card1" style="margin-right: 51%;">
                                 <div class="photo" >
                                     <p style="margin-top: 25%; text-align: center; font-family: 'Oswald', sans-serif; color: white; font-size: 20px;" > COMO <BR>FUNCIONAMOS?
                                         </p>
@@ -411,8 +354,9 @@
                                     </div>                            
                        </div>
                         </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
+                        <li class="timeline-inverted" style="">
+                            <div class="timeline-image" style="    background-image: linear-gradient(#8b9da9, #fff6e4);
+                            ">
                                 <h4>Que tal  
                                     <br>entrar 
                                     <br>em contato?</h4>
@@ -526,8 +470,12 @@
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
-                            </div>
+                                <a href="#services" class="btn btn-1" style="width: auto;">
+                                    <svg>
+                                      <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                                    </svg>
+                                  <h6 style="color: blanchedalmond;">SEND MAIL</h6>
+                                  </a>                            </div>
                         </div>
                     </form>
                 </div>
@@ -539,7 +487,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright © Your Website 2014</span>
+                    <span class="copyright">Copyright © Your Website 2020 Developed by Joãozinho</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">

@@ -3,7 +3,7 @@ html{    scroll-behavior: smooth;
 }
  body {
     overflow-x: hidden;
-
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(12, 11, 11));
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
@@ -762,6 +762,64 @@ ul.social-buttons li a:active {
 .btn:active:focus {
     outline: 0;
 }
+
+.btn {
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 0 2em;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  @media (min-width: 600px) {
+    .btn {
+      margin: 0 1em 2em;
+      width: 100px;
+    }
+  }
+  .btn:hover {
+    text-decoration: none;
+  }
+  
+  .btn-1 {
+    background: #e02c26;
+    font-weight: 100;
+    width: 100px;
+
+  }
+  .btn-1 svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .btn-1 rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    -webkit-transition: all 0.35s linear;
+    transition: all 0.35s linear;
+  }
+  
+  .btn-1:hover {
+    background: rgba(225, 51, 45, 0);
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+  .btn-1:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
 .card1 {
     box-shadow: 0 0 100px -50px black;
     width: 200px;
@@ -962,7 +1020,8 @@ img::-moz-selection {
     margin: 0 auto;
     text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
     /* Clip Background Image */
-    background: url('../../assets/img/load.png') repeat-;
+
+    background: url('../../assets/img/load.png') repeat-x;
     -webkit-background-clip: text;
     background-clip: text;
     /* Animate Background Image */
@@ -982,4 +1041,62 @@ img::-moz-selection {
       background-position: 100% 50%;
     }
   }
+  #box {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    width: 400px;
+    height: 200px;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 2.5rem;
+  }
+  .gradient-border {
+    --borderWidth: 3px;
+    background: rgb(255, 255, 255);
+    position: relative;
+    border-radius: var(--borderWidth);
+  }
+  .gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f73333, #e70f0f, #a1002e, #046d00, #09ff00, #008817, #df0000, #00ff22);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    -webkit-animation: animatedgradient 3s ease alternate infinite;
+            animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+  }
   
+  
+  @-webkit-keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  
+  
+  @keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
